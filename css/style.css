@@ -7,7 +7,7 @@
 :root {
     --font: "Inter", serif;
     --text-color: white;
-    --bg-mobile: url(../images/bg-mobile.jpg);
+    --bg-mobile: url(../images/bg-desktop.jpg);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(0, 0, 0, 0.1);
     --surface-color-hover: rgba(0, 0, 0, 0.05);
@@ -17,7 +17,7 @@
 
 .light {
     --text-color: black;
-    --bg-mobile: url(../images/bg-mobile-light.jpg);
+    --bg-mobile: url(../images/bg-desktop-light.jpg);
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
@@ -26,7 +26,8 @@
 }
 
 body {
-    background: var(--bg-mobile) no-repeat top center/cover;
+    background: var(--bg-mobile) no-repeat top center/cover fixed;
+    /* background-attachment: fixed; */
 }
 
 body * {
